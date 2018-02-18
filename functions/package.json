@@ -6,11 +6,15 @@
     "shell": "firebase experimental:functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "test": "mocha"
   },
   "dependencies": {
+    "@google-cloud/language": "^1.1.0",
+    "@google-cloud/vision": "^0.15.2",
     "firebase-admin": "~5.8.1",
-    "firebase-functions": "^0.8.1"
+    "firebase-functions": "^0.8.1",
+    "nodemailer": "^4.4.2"
   },
   "private": true
 }
